@@ -130,5 +130,25 @@ class DoublyLinkedListTest {
         assertTrue(list.remove(secondNode));
         assertTrue(list.remove(firstNode));
         assertNull(list.head());
+
+        cleanup();
+        setup();
+
+        assertEquals(firstNode, list.insertLast(firstNode));
+        assertEquals(secondNode, list.insertLast(secondNode));
+        assertTrue(list.remove(firstNode));
+        assertEquals(secondNode, list.head());
+        assertNull(firstNode.getNext());
+        assertNull(firstNode.getPrev());
+
+        cleanup();
+        setup();
+
+        assertEquals(firstNode, list.insertLast(firstNode));
+        assertEquals(secondNode, list.insertLast(secondNode));
+        assertEquals(thirdNode, list.insertLast(thirdNode));
+        assertTrue(list.remove(secondNode));
+        assertEquals(thirdNode, firstNode.getNext());
+        assertEquals(firstNode, thirdNode.getPrev());
     }
 }

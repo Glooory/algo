@@ -49,21 +49,4 @@ public class Array {
     public int size() {
         return size;
     }
-
-    @Override
-    public String toString() {
-        if (size == 0) {
-            return "[]";
-        }
-        String s = "[";
-        for (int i = 0; i < size; i++) {
-            if (i == size - 1) {
-                s += data[i];
-            } else {
-                s = s + data[i] + ",";
-            }
-        }
-        s += "]";
-        return s;
-    }
 }

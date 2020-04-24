@@ -52,10 +52,13 @@ class SortedArrayTest {
         assertFalse(arr.remove(1));
         assertTrue(arr.remove(3));
         assertEquals(0, arr.size());
+        arr.add(344);
         arr.add(23);
         arr.add(3);
         assertTrue(arr.remove(23));
         assertEquals(3, arr.get(0));
+        assertEquals(2, arr.size());
+        assertTrue(arr.remove(3));
         assertEquals(1, arr.size());
     }
 

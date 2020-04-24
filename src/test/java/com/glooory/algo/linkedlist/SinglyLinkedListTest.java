@@ -14,6 +14,9 @@ class SinglyLinkedListTest {
         assertNotNull(list.head());
         assertNull(list.head().getNext());
         assertEquals("D", list.head().getValue());
+        SinglyLinkedList.Node secondNode = new SinglyLinkedList.Node<String>("F");
+        assertEquals(secondNode, list.insertFirst(secondNode));
+        assertEquals(secondNode, list.head());
     }
 
     @Test
@@ -24,6 +27,12 @@ class SinglyLinkedListTest {
         assertNotNull(list.head());
         assertNull(list.head().getNext());
         assertEquals("D", list.head().getValue());
+        SinglyLinkedList.Node secondNode = new SinglyLinkedList.Node<String>("F");
+        assertEquals(secondNode, list.insertLast(secondNode));
+        assertEquals(secondNode, list.head().getNext());
+        SinglyLinkedList.Node thirdNode = new SinglyLinkedList.Node<String>("G");
+        assertEquals(thirdNode, list.insertLast(thirdNode));
+        assertEquals(thirdNode, secondNode.getNext());
     }
 
     @Test
@@ -37,10 +46,9 @@ class SinglyLinkedListTest {
         assertTrue(list.insertBefore(firstNode, secondNode));
         assertEquals("F", list.head().getValue());
         SinglyLinkedList.Node<String> thirdNode = new SinglyLinkedList.Node<String>("G");
-        assertTrue(list.insertBefore(secondNode, thirdNode));
-        assertEquals(thirdNode, list.head());
-        assertEquals(secondNode, list.head().getNext());
-        assertEquals(firstNode, list.head().getNext().getNext());
+        assertTrue(list.insertBefore(firstNode, thirdNode));
+        assertEquals(thirdNode, secondNode.getNext());
+        assertEquals(firstNode, thirdNode.getNext());
     }
 
     @Test
