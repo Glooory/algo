@@ -4,7 +4,7 @@
 - [x] [实现两个有序数组合并为一个有序数组](https://leetcode.com/problems/merge-sorted-array/)
 - [x] [Three Sum（求三数之和）](https://leetcode.com/problems/3sum/)
 - [x] [Majority Element（求众数）](https://leetcode.com/problems/majority-element/)
-- [ ] [Missing Positive（求缺失的第一个正数）](https://leetcode.com/problems/first-missing-positive/)
+- [x] [Missing Positive（求缺失的第一个正数）](https://leetcode.com/problems/first-missing-positive/)
 
 ## 链表
 - [x] 实现单链表、循环链表、双向链表，支持增删操作
