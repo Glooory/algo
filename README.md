@@ -11,7 +11,7 @@
 - [x] [单链表反转](https://leetcode.com/problems/reverse-linked-list/)
 - [x] [合并两个有序的链表](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [x] [链表的中间结点](https://leetcode.com/problems/middle-of-the-linked-list/)
-- [ ] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
+- [x] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
 - [ ] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 
