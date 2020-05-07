@@ -12,8 +12,7 @@
 - [x] [合并两个有序的链表](https://leetcode.com/problems/merge-two-sorted-lists/)
 - [x] [链表的中间结点](https://leetcode.com/problems/middle-of-the-linked-list/)
 - [x] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
-- [ ] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
-
+- [x] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 ## 栈
 - [ ] 用数组实现一个顺序栈
