@@ -9,8 +9,8 @@
 ## 链表
 - [x] 实现单链表、循环链表、双向链表，支持增删操作
 - [x] [单链表反转](https://leetcode.com/problems/reverse-linked-list/)
-- [x] [两个有序的链表合并为一个有序链表](https://leetcode.com/problems/merge-two-sorted-lists/)
-- [ ] 实现求链表的中间结点
+- [x] [合并两个有序的链表](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [x] [链表的中间结点](https://leetcode.com/problems/middle-of-the-linked-list/)
 - [ ] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
 - [ ] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
 
