@@ -15,7 +15,7 @@
 - [x] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 ## 栈
-- [ ] 用数组实现一个顺序栈
+- [x] 用数组实现一个顺序栈
 - [ ] 用链表实现一个链式栈
 - [ ] 编程模拟实现一个浏览器的前进、后退功能
 
