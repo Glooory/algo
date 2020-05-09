@@ -14,7 +14,7 @@ public class SortedArray {
 
     // O(n)
     public void add(int num) {
-        ensureOpacity();
+        ensureCapacity();
 
         // insert first
         data[size] = num;
@@ -88,7 +88,7 @@ public class SortedArray {
         }
     }
 
-    private void ensureOpacity() {
+    private void ensureCapacity() {
         if (size >= data.length - 1) {
             grow();
         }

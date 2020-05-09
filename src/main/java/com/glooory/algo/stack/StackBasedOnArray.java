@@ -9,7 +9,7 @@ public class StackBasedOnArray {
     }
 
     public int push(int num) {
-        ensureOpacity();
+        ensureCapacity();
         data[size] = num;
         size++;
         return size;
@@ -28,7 +28,7 @@ public class StackBasedOnArray {
         return size;
     }
 
-    private void ensureOpacity() {
+    private void ensureCapacity() {
         if (size == data.length) {
             int[] newData = new int[data.length * 2];
             for (int i = 0; i < data.length; i++) {
