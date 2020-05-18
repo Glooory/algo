@@ -27,7 +27,7 @@
 ## 递归
 - [x] 编程实现斐波那契数列求值f(n)=f(n-1)+f(n-2)
 - [x] 编程实现求阶乘n!
-- [ ] 编程实现一组数据集合的全排列
+- [x] [编程实现一组数据集合的全排列](https://leetcode.com/problems/permutations/)
 - [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 
 ## 排序
