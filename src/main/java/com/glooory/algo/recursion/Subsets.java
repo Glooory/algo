@@ -81,26 +81,20 @@ public class Subsets {
         }
 
         Arrays.sort(nums);
-        boolean[] used = new boolean[nums.length];
-        backtrackWithDuplicates(nums, new ArrayList<>(), used, 0, result);
+        backtrackWithDuplicates(nums, new ArrayList<>(),0, result);
 
         return result;
     }
 
-    private static void backtrackWithDuplicates(int[] nums, List<Integer> tempList, boolean[] used, int start, List<List<Integer>> result) {
+    private static void backtrackWithDuplicates(int[] nums, List<Integer> tempList, int start, List<List<Integer>> result) {
         result.add(new ArrayList<>(tempList));
         for (int i = start; i < nums.length; i++) {
-            if (used[i]) {
-                continue;
-            }
-            if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
+            if (i > start && nums[i] == nums[i - 1]) {
                 continue;
             }
 
-            used[i] = true;
             tempList.add(nums[i]);
-            backtrackWithDuplicates(nums, tempList, used, i + 1, result);
-            used[i] = false;
+            backtrackWithDuplicates(nums, tempList, i + 1, result);
             tempList.remove(tempList.size() - 1);
         }
     }
